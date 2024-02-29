@@ -11,48 +11,79 @@ const SoftSkills = () => {
 
 
     return (
-        <Box bg="#0c0801" py={10}>
+      <Box bg="#0c0801" py={10}>
+        <Center>
+          <Flex align={"center"} direction={"column"}>
+            <Text
+              p={5}
+              fontSize={["20px", "25px", "30px"]}
+              textColor="antiquewhite"
+              fontWeight={["700", "700", "700"]}
+              fontFamily="Georgia, 'Times New Roman', Times, serif"
+            >
+              SOFT SKILLS
+            </Text>
+            <SimpleGrid columns={[1, 1, 3, 5]} gap={"6"}>
+              <VStack>
+                <Image
+                  w={["300px", "250px", "200px"]}
+                h="150px"
+                  borderRadius="8px"
+                  src="https://www.marketing91.com/wp-content/uploads/2020/06/What-is-Team-Player.jpg"
+                  alt=""
+                />
+                <Text color={"cyan.500"}>Team Player</Text>
+              </VStack>
 
-            <Center >
-                <Flex align={"center"} direction={"column"} >
+              <VStack>
+                {/* //https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPxCd25gN5i7hyf2j4CZGyY7y5T7vWekVIlw&usqp=CAU  */}
+                <Image
+                  w={["300px", "250px", "200px"]}
+                 h="150px"
+                  borderRadius="8px"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPxCd25gN5i7hyf2j4CZGyY7y5T7vWekVIlw&usqp=CAU"
+                  alt=""
+                />
+                <Text color={"cyan.500"}>Communication Skills</Text>
+              </VStack>
 
-                <Text p={5} fontSize={["20px", "25px", "30px"]} textColor="antiquewhite" fontWeight={["700", "700", "700"]} fontFamily="Georgia, 'Times New Roman', Times, serif">SOFT SKILLS</Text>
-                <SimpleGrid columns={[1, 1, 3, 5]} gap={"6"}>
-                    <VStack  >
-                        <Image w={["300px","250px","200px"]} h="150px" src="https://www.marketing91.com/wp-content/uploads/2020/06/What-is-Team-Player.jpg" alt="" />
-                        <Text>Team Player</Text>
-                    </VStack>
+              <VStack>
+                <Image
+                 w={["300px", "250px", "200px"]}
+                  borderRadius="8px"
+                  h="150px"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3Q7NLes7OaUYRFxajiu_dNQQiBEl1OrXMQ&usqp=CAU"
+                  alt=""
+                />
+                <Text color={"cyan.500"}>Time Management</Text>
+              </VStack>
 
-                    <VStack >
+              <VStack>
+                <Image
+                  w={["300px", "250px", "200px"]}
+                  h="150px"
+                  borderRadius="8px"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRogBaBLsNl1rnUteqsDxJXafATAkCySrtdQQ&usqp=CAU"
+                  alt=""
+                />
+                <Text color={"cyan.500"}>Problem Solving</Text>
+              </VStack>
 
-                       {/* //https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPxCd25gN5i7hyf2j4CZGyY7y5T7vWekVIlw&usqp=CAU  */}
-                        <Image w={["300px","250px","200px"]} h="150px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPxCd25gN5i7hyf2j4CZGyY7y5T7vWekVIlw&usqp=CAU" alt="" />
-                        <Text>Communication Skills</Text>
-                    </VStack>
-
-                    <VStack >
-                        <Image w={["300px","250px","200px"]} h="150px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3Q7NLes7OaUYRFxajiu_dNQQiBEl1OrXMQ&usqp=CAU" alt="" />
-                        <Text>Time Management</Text>
-                    </VStack>
-
-                    <VStack >
-                        <Image w={["300px","250px","200px"]} h="150px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRogBaBLsNl1rnUteqsDxJXafATAkCySrtdQQ&usqp=CAU" alt="" />
-                        <Text>Problem Solving</Text>
-                    </VStack>
-
-                    <VStack >
-                        <Image w={["300px","250px","200px"]} h="150px" src={image1} alt="" />
-                        <Text>Adaptability</Text>
-                    </VStack>
-                </SimpleGrid>
-                </Flex>
-            </Center>
-
-
-
-
-        </Box>
-    )
+              <VStack>
+                <Image
+                  borderRadius="8px"
+                  w={["300px", "250px", "200px"]}
+                  h="150px"
+                  src={image1}
+                  alt=""
+                />
+                <Text color={"cyan.500"}>Adaptability</Text>
+              </VStack>
+            </SimpleGrid>
+          </Flex>
+        </Center>
+      </Box>
+    );
 }
 
 export default SoftSkills
