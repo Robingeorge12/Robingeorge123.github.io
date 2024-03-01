@@ -20,72 +20,182 @@ export default function Skill() {
 //data:image/jpeg;base64,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
 
     return (
+      <Stack id="skills" p="10px" bgColor="#060c30" pb="60px">
+        <Text
+          align="center"
+          fontSize={["20px", "25px", "30px"]}
+          textColor="antiquewhite"
+          fontWeight={["700", "700", "700"]}
+          fontFamily="Georgia, 'Times New Roman', Times, serif"
+        >
+          SKILLS
+        </Text>
+        <SimpleGrid columns={[1, 1, 2, 2]}>
+          <Box pl="70px" bgColor="#060c30">
+            <Text
+              fontSize={["20px", "22px", "25px"]}
+              p="20px"
+              textColor="antiquewhite"
+            >
+              FRONTEND
+            </Text>
+            <VStack align="left" ml="70px">
+              <HStack
+                w={["100%", "70%", "70%"]}
+                bgColor="#060816"
+                spacing="40px"
+              >
+                <Image
+                  width="60px"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                  alt="pic1"
+                />
+                <Text fontSize={["20px", "25", "30px"]} textColor="aqua">
+                  JavaScript
+                </Text>
+              </HStack>
+              <HStack
+                w={["100%", "70%", "70%"]}
+                bgColor="#060816"
+                spacing="40px"
+              >
+                <Image
+                  width="60px"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                  alt="pic1"
+                />
+                <Text fontSize={["20px", "25", "30px"]} textColor="aqua">
+                  React
+                </Text>
+              </HStack>
+              <HStack
+                w={["100%", "70%", "70%"]}
+                bgColor="#060816"
+                spacing="40px"
+              >
+                <Image
+                  width="60px"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+                  alt="pic1"
+                />
+                <Text fontSize={["20px", "25", "30px"]} textColor="aqua">
+                  Redux
+                </Text>
+              </HStack>
+              <HStack
+                w={["100%", "70%", "70%"]}
+                bgColor="#060816"
+                spacing="40px"
+              >
+                <Image
+                  width="60px"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"
+                  alt="pic1"
+                />
+                <Text fontSize={["20px", "25", "30px"]} textColor="aqua">
+                  Bootstrap
+                </Text>
+              </HStack>
+              <HStack
+                w={["100%", "70%", "70%"]}
+                bgColor="#060816"
+                spacing="40px"
+              >
+                <Image
+                  width="60px"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                  alt="pic1"
+                />
+                <Text fontSize={["20px", "25", "30px"]} textColor="aqua">
+                  HTML5
+                </Text>
+              </HStack>
+              <HStack
+                w={["100%", "70%", "70%"]}
+                bgColor="#060816"
+                spacing="40px"
+              >
+                <Image
+                  width="60px"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                  alt="pic1"
+                />
+                <Text fontSize={["20px", "25", "30px"]} textColor="aqua">
+                  CSS
+                </Text>
+              </HStack>
+            </VStack>
+          </Box>
+          <Box bgColor="#060c30">
+            <Text
+              fontSize={["20px", "22px", "25px"]}
+              p="20px"
+              textColor="antiquewhite"
+            >
+              BACKEND
+            </Text>
+            <VStack align="left" ml="70px">
+              <HStack
+                w={["100%", "70%", "70%"]}
+                bgColor="#060816"
+                spacing="40px"
+              >
+                <Image
+                  bgColor="white"
+                  width="60px"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+                  alt="pic1"
+                />
+                <Text fontSize={["20px", "25", "30px"]} textColor="aqua">
+                  Express
+                </Text>
+              </HStack>
+              <HStack
+                w={["100%", "70%", "70%"]}
+                bgColor="#060816"
+                spacing="40px"
+              >
+                <Image
+                  width="60px"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                  alt="pic1"
+                />
+                <Text fontSize={["20px", "25", "30px"]} textColor="aqua">
+                  Node JS
+                </Text>
+              </HStack>
+              <HStack
+                w={["100%", "70%", "70%"]}
+                bgColor="#060816"
+                spacing="40px"
+              >
+                <Image
+                  width="60px"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                  alt="pic1"
+                />
+                <Text fontSize={["20px", "25", "30px"]} textColor="aqua">
+                  Mongo DB
+                </Text>
+              </HStack>
 
-        <Stack id="skills" p="10px" bgColor="#060c30" pb="60px">
-        <Text align="center" fontSize={["20px","25px","30px"]} textColor="antiquewhite"  fontWeight={["700","700","700"]} fontFamily="Georgia, 'Times New Roman', Times, serif">SKILLS</Text>
-            <SimpleGrid columns={[1, 1, 2, 2]}  >
-
-
-                <Box pl="70px" bgColor="#060c30" >
-        
-                    <Text fontSize={["20px","22px","25px"]} p="20px" textColor="antiquewhite" >FRONTEND</Text>
-                    <VStack align="left" ml="70px" >
-                        <HStack w={["100%","70%","70%"]} bgColor="#060816" spacing="40px">
-                            <Image width="60px" src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg' alt='pic1' />
-                            <Text fontSize={["20px","25","30px"]} textColor="aqua" >JavaScript</Text>
-                        </HStack>
-                        <HStack w={["100%","70%","70%"]} bgColor="#060816" spacing="40px">
-                            <Image width="60px" src='https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg' alt='pic1' />
-                            <Text fontSize={["20px","25","30px"]} textColor="aqua">React</Text>
-                        </HStack>
-                        <HStack w={["100%","70%","70%"]} bgColor="#060816" spacing="40px">
-                            <Image width="60px" src='https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg' alt='pic1' />
-                            <Text fontSize={["20px","25","30px"]} textColor="aqua">Redux</Text>
-                        </HStack>
-                        <HStack w={["100%","70%","70%"]} bgColor="#060816" spacing="40px">
-                            <Image width="60px" src='https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg' alt='pic1' />
-                            <Text fontSize={["20px","25","30px"]} textColor="aqua">TypeScript</Text>
-                        </HStack>
-                        <HStack w={["100%","70%","70%"]} bgColor="#060816" spacing="40px">
-                            <Image width="60px" src='https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg' alt='pic1' />
-                            <Text fontSize={["20px","25","30px"]} textColor="aqua">HTML5</Text>
-                        </HStack>
-                        <HStack w={["100%","70%","70%"]} bgColor="#060816" spacing="40px">
-                            <Image width="60px" src='https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg' alt='pic1' />
-                            <Text fontSize={["20px","25","30px"]} textColor="aqua">CSS</Text>
-                        </HStack>
-
-
-                    </VStack>
-
-                </Box>
-                <Box bgColor="#060c30" >
-                    <Text fontSize={["20px","22px","25px"]} p="20px" textColor="antiquewhite" >BACKEND</Text>
-                    <VStack align="left" ml="70px">
-                        <HStack w={["100%","70%","70%"]} bgColor="#060816" spacing="40px">
-                            <Image bgColor="white" width="60px" src='https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg' alt='pic1' />
-                            <Text fontSize={["20px","25","30px"]} textColor="aqua">Express</Text>
-                        </HStack>
-                        <HStack  w={["100%","70%","70%"]} bgColor="#060816" spacing="40px">
-                            <Image width="60px" src='https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg' alt='pic1' />
-                            <Text fontSize={["20px","25","30px"]} textColor="aqua">Node JS</Text>
-                        </HStack>
-                        <HStack w={["100%","70%","70%"]} bgColor="#060816" spacing="40px">
-                            <Image width="60px" src='https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg' alt='pic1' />
-                            <Text fontSize={["20px","25","30px"]} textColor="aqua">Mongo DB</Text>
-                        </HStack>
-                        {/* <HStackstyle={{ display: "flex" }}>
-                            <Image width="60px" src='' alt='pic1' />
-                            <Text></Text>
-                        </Box> */}
-                    </VStack>
-
-                </Box>
-
-            </SimpleGrid>
-
-        </Stack>
-
-
-    )
+              <HStack
+                w={["100%", "70%", "70%"]}
+                bgColor="#060816"
+                spacing="40px"
+              >
+                <Image
+                  width="60px"
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+                  alt="pic1"
+                />
+                <Text fontSize={["20px", "25", "30px"]} textColor="aqua">
+                  MySQL
+                </Text>
+              </HStack>
+            </VStack>
+          </Box>
+        </SimpleGrid>
+      </Stack>
+    );
 }

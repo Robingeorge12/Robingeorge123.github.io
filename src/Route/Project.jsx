@@ -11,12 +11,130 @@ import { GoLinkExternal } from "react-icons/go";
 export default function Project() {
     // const col = useBreakpointValue({base:2,md:1})
     return (
-        <Stack id="projects" p="10px" bgColor="#020214" pb="60px">
-            <Text align="center" fontSize={["20px", "25px", "30px"]} textColor="antiquewhite" fontWeight={["700", "700", "700"]} fontFamily="Georgia, 'Times New Roman', Times, serif">PROJECT</Text>
-            <SimpleGrid columns={[1, 2, 3, 3]} spacing={10}>
+      <Stack id="projects" p="10px" bgColor="#020214" pb="60px">
+        <Text
+          align="center"
+          fontSize={["20px", "25px", "30px"]}
+          textColor="antiquewhite"
+          fontWeight={["700", "700", "700"]}
+          fontFamily="Georgia, 'Times New Roman', Times, serif"
+        >
+          PROJECT
+        </Text>
+        <SimpleGrid columns={[1, 2, 3, 3]} spacing={10}>
+          <Box>
+            <VStack>
+              <Box
+                h="400px"
+                w={["280px", "320", "350px"]}
+                spacing="40px"
+                bgColor="#060c30"
+              >
+                <Image
+                  width="100%"
+                  height="150px"
+                  src="https://i.ibb.co/yVZPqGL/Screenshot-244.png"
+                  alt="prpic"
+                />
                 <Box>
-
-                    <VStack>
+                  <Text textColor="red.300">ODRMAT</Text>
+                  <Box w={["250px", "260px", "320px"]} ml="12px" pb="10px">
+                    <Text align="left" textColor="white">
+                      ODRMAT is an Oder Management system. End to end procedure
+                      of an Order management system has been implemented.{" "}
+                    </Text>
+                    <Text align="left" textColor="white">
+                      {" "}
+                      An individual mini project ,completed in 15 days
+                    </Text>
+                  </Box>
+                  <Text textColor="white">* MERN STACK | BOOTSTRAP</Text>
+                  {/* <Text textColor="white">
+                    * NODEJS | REACT | REDUX | MONGODB | EXPRESS
+                  </Text> */}
+                </Box>
+                <HStack>
+                  <Box ml="60px" mr={4}>
+                    <Link href="https://github.com/Robingeorge12/OrderManagement_FullStack_Project">
+                      <Button bgColor="red.300" color="white">
+                        CODE{" "}
+                        <Text pl={4}>
+                          <BsGithub />
+                        </Text>{" "}
+                      </Button>
+                    </Link>
+                  </Box>
+                  <Box mr="-20px">
+                    {" "}
+                    <Link href="https://order-management-system-frontend-delta.vercel.app/">
+                      <Button bgColor="red.300" color="white">
+                        LIVE{" "}
+                        <Text pl={4}>
+                          <GoLinkExternal />
+                        </Text>
+                      </Button>
+                    </Link>
+                  </Box>
+                </HStack>
+              </Box>
+            </VStack>
+          </Box>
+          <Box>
+            <VStack>
+              <Box
+                bgColor="#060c30"
+                h="400px"
+                w={["280px", "320", "350px"]}
+                spacing="40px"
+              >
+                <Image
+                  width="100%"
+                  height="150px"
+                  src="https://i.ibb.co/hLhppT4/Screenshot-new.png"
+                  alt="pr4"
+                />
+                <Box>
+                  <Text textColor="red.300">SHINE.COM</Text>
+                  <Box w={["250px", "260px", "320px"]} ml="12px" pb="10px">
+                    <Text align="left" textColor="white">
+                      Shine.com is a job career guidace and job searching
+                      website
+                    </Text>
+                    <Text textColor="white" align="left">
+                      An individual mini project ,completed in 4 days
+                    </Text>
+                  </Box>
+                  <Text mt="25px" textColor="white">
+                    * HTML | CSS3 | REACT JS{" "}
+                  </Text>
+                </Box>
+                <HStack>
+                  <Box ml="60px" mr={4}>
+                    <Link href="https://github.com/Robingeorge12/capable-downtown-7255">
+                      <Button bgColor="red.300" color="white">
+                        CODE{" "}
+                        <Text pl={4}>
+                          <BsGithub />
+                        </Text>{" "}
+                      </Button>
+                    </Link>
+                  </Box>
+                  <Box mr="60px">
+                    <Link href="https://capable-downtown-7255.vercel.app/">
+                      <Button bgColor="red.300" color="white">
+                        LIVE{" "}
+                        <Text pl={4}>
+                          <GoLinkExternal />
+                        </Text>
+                      </Button>
+                    </Link>
+                  </Box>
+                </HStack>
+              </Box>
+            </VStack>
+                </Box>
+                
+                                    <VStack>
                         <Box h="400px" w={["280px","320","350px"]} spacing="40px" bgColor="#060c30">
                             <Image width="100%" height="150px" src="https://i.ibb.co/pQBzxRV/Home.png" alt="prpic" />
                             <Box>
@@ -36,50 +154,64 @@ export default function Project() {
                             </HStack>
                         </Box>
                     </VStack>
-                </Box>
-                <Box >
-                    <VStack>
-                        <Box bgColor="#060c30" h="400px" w={["280px","320","350px"]} spacing="40px">
-                            <Image width="100%" height="150px" src="https://i.ibb.co/hLhppT4/Screenshot-new.png" alt="pr4" />
-                            <Box>
-                                <Text textColor="red.300">SHINE.COM</Text>
-                                <Box w={["250px","260px","320px"]} ml="12px" pb="10px">
-                                <Text align="left" textColor="white">Shine.com is a job career guidace and job searching website</Text>
-                                <Text textColor="white"align="left">An individual mini project ,completed in 4 days</Text>
-                                </Box>
-                                <Text mt="25px" textColor="white">*  HTML | CSS3 | REACT JS </Text>
-                                
-                            </Box>
-                            <HStack>
-                            <Box ml="60px" mr={4}><Link href="https://github.com/Robingeorge12/capable-downtown-7255"><Button bgColor="red.300" color="white">CODE <Text pl={4}><BsGithub /></Text> </Button></Link></Box>
-                            <Box mr="60px" ><Link href="https://capable-downtown-7255.vercel.app/"><Button bgColor="red.300" color="white">LIVE <Text pl={4}><GoLinkExternal /></Text></Button></Link></Box>
-                            </HStack>
-                        </Box>
-                    </VStack>
-                </Box>
+                {/* </Box> */}
+          {/* <Box>
+            <VStack>
+              <Box
+                bgColor="#060c30"
+                h="400px"
+                w={["280px", "320", "350px"]}
+                spacing="40px"
+              >
+                <Image
+                  width="100%"
+                  height="150px"
+                  src="https://i.ibb.co/WsyHVHh/Screenshot-116.png"
+                  alt="pr5"
+                />
                 <Box>
-                    <VStack>
-                        <Box bgColor="#060c30" h="400px" w={["280px","320","350px"]} spacing="40px">
-                            <Image width="100%" height="150px" src="https://i.ibb.co/WsyHVHh/Screenshot-116.png" alt="pr5" />
-                            <Box >
-                                <Text textColor="red.300">GEAR-BEST.COM</Text>
-                                <Box w={["250px","260px","320px"]} ml="12px" pb="10px">
-                                <Text align="left" textColor="white"> Gear-Best.com is best in selling gadgets and hardwares. </Text>
-                                <Text align="left" textColor="white">It was a collaborative project of 6 members, completed in 5 days</Text>
-                                </Box>
-                                <Text mt="25px" textColor="white">* HTML | CSS3 | JAVASCRIPT </Text>
-                            </Box>
-                            <HStack>
-
-                            <Box ml="70px" mr={4}> <Link href="https://github.com/Lalitsingh28/GEARBEST_CLONE"><Button bgColor="red.300" color="white" >CODE <Text pl={2}><BsGithub /></Text> </Button></Link></Box>
-                            <Box mr="60px" ><Link href="" ><Button bgColor="red.300" color="white" >LIVE <Text pl={2}><GoLinkExternal /></Text></Button></Link></Box>
-                            </HStack>
-                        </Box>
-                    </VStack>
+                  <Text textColor="red.300">GEAR-BEST.COM</Text>
+                  <Box w={["250px", "260px", "320px"]} ml="12px" pb="10px">
+                    <Text align="left" textColor="white">
+                      {" "}
+                      Gear-Best.com is best in selling gadgets and hardwares.{" "}
+                    </Text>
+                    <Text align="left" textColor="white">
+                      It was a collaborative project of 6 members, completed in
+                      5 days
+                    </Text>
+                  </Box>
+                  <Text mt="25px" textColor="white">
+                    * HTML | CSS3 | JAVASCRIPT{" "}
+                  </Text>
                 </Box>
-
-
-            </SimpleGrid>
-        </Stack >
-    )
+                <HStack>
+                  <Box ml="70px" mr={4}>
+                    {" "}
+                    <Link href="https://github.com/Lalitsingh28/GEARBEST_CLONE">
+                      <Button bgColor="red.300" color="white">
+                        CODE{" "}
+                        <Text pl={2}>
+                          <BsGithub />
+                        </Text>{" "}
+                      </Button>
+                    </Link>
+                  </Box>
+                  <Box mr="60px">
+                    <Link href="">
+                      <Button bgColor="red.300" color="white">
+                        LIVE{" "}
+                        <Text pl={2}>
+                          <GoLinkExternal />
+                        </Text>
+                      </Button>
+                    </Link>
+                  </Box>
+                </HStack>
+              </Box>
+            </VStack>
+          </Box> */}
+        </SimpleGrid>
+      </Stack>
+    );
 }
