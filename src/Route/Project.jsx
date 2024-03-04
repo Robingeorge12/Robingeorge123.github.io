@@ -19,7 +19,7 @@ export default function Project() {
           fontWeight={["700", "700", "700"]}
           fontFamily="Georgia, 'Times New Roman', Times, serif"
         >
-          PROJECT
+          PROJECTS
         </Text>
         <SimpleGrid columns={[1, 2, 3, 3]} spacing={10}>
           <Box>
@@ -45,7 +45,7 @@ export default function Project() {
                     </Text>
                     <Text align="left" textColor="white">
                       {" "}
-                      An individual mini project ,completed in 15 days
+                      An individual Full Stack project ,completed in 15 days
                     </Text>
                   </Box>
                   <Text textColor="white">* MERN STACK | BOOTSTRAP</Text>
